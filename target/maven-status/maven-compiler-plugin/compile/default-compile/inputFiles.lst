@@ -1,0 +1,8 @@
+C:\S6\deloy\mock_project\source\api-gateway\src\main\java\com\laboratory\gateway\configuration\WebClientConfiguration.java
+C:\S6\deloy\mock_project\source\api-gateway\src\main\java\com\laboratory\gateway\configuration\AuthenticationFilter.java
+C:\S6\deloy\mock_project\source\api-gateway\src\main\java\com\laboratory\gateway\dto\ApiResponse.java
+C:\S6\deloy\mock_project\source\api-gateway\src\main\java\com\laboratory\gateway\ApiGatewayApplication.java
+C:\S6\deloy\mock_project\source\api-gateway\src\main\java\com\laboratory\gateway\dto\request\IntrospectRequest.java
+C:\S6\deloy\mock_project\source\api-gateway\src\main\java\com\laboratory\gateway\dto\response\IntrospectResponse.java
+C:\S6\deloy\mock_project\source\api-gateway\src\main\java\com\laboratory\gateway\repository\IdentityClient.java
+C:\S6\deloy\mock_project\source\api-gateway\src\main\java\com\laboratory\gateway\service\IdentityService.java

@@ -1,0 +1,12 @@
+com\laboratory\gateway\service\IdentityService.class
+com\laboratory\gateway\dto\ApiResponse$ApiResponseBuilder.class
+com\laboratory\gateway\dto\response\IntrospectResponse.class
+com\laboratory\gateway\configuration\WebClientConfiguration.class
+com\laboratory\gateway\dto\response\IntrospectResponse$IntrospectResponseBuilder.class
+com\laboratory\gateway\dto\request\IntrospectRequest$IntrospectRequestBuilder.class
+com\laboratory\gateway\repository\IdentityClient.class
+com\laboratory\gateway\configuration\AuthenticationFilter$Config.class
+com\laboratory\gateway\dto\ApiResponse.class
+com\laboratory\gateway\ApiGatewayApplication.class
+com\laboratory\gateway\configuration\AuthenticationFilter.class
+com\laboratory\gateway\dto\request\IntrospectRequest.class
