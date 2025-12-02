@@ -1,5 +1,5 @@
 # 1. Base image JDK 21
-FROM openjdk:21-jdk-slim
+FROM eclipse-temurin:21-jdk
 
 # 2. Set working directory
 WORKDIR /app
