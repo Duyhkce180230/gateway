@@ -1,0 +1,51 @@
+server:
+  port: 8888
+
+app:
+  api-prefix: /api/v1
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins:
+              - "http://localhost:3000"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"
+            allowCredentials: true
+
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials
+
+      routes:
+        - id: identity_service
+          uri: https://identity-service.onrender.com
+          predicates:
+            - Path=/api/v1/identity/**
+          filters:
+            - StripPrefix=2
+
+        - id: patient_service
+          uri: https://patient-service.onrender.com
+          predicates:
+            - Path=/api/v1/patient/**
+          filters:
+            - StripPrefix=2
+            - AuthenticationFilter
+
+        - id: testorder_service
+          uri: https://testorder-service.onrender.com
+          predicates:
+            - Path=/api/v1/test-orders/**, /api/v1/test-results/**, /api/v1/test-types/**, /api/v1/comments/**
+          filters:
+            - StripPrefix=2
+            - AuthenticationFilter
