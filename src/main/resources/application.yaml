@@ -13,7 +13,7 @@ spring:
         cors-configurations:
           '[/**]':
             allowedOrigins:
-              - "https://laboratorygroup4.onrender.com"
+              - "https://client-za9h.onrender.com"
             allowedMethods:
               - GET
               - POST
@@ -30,7 +30,7 @@ spring:
         - id: identity_service
           uri: https://identity-service.onrender.com
           predicates:
-            - Path=/api/v1/identity/**
+            - Path=${app.api-prefix}/identity/**
           filters:
             - StripPrefix=2
 
