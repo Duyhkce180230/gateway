@@ -21,23 +21,6 @@ public class WebClientConfiguration {
                 .build();
     }
 
-        @Bean
-    CorsWebFilter corsWebFilter(){
-        CorsConfiguration corsConfiguration = new CorsConfiguration();
-        corsConfiguration.setAllowedOriginPatterns(List.of(
-                "https://client-za9h.onrender.com",
-                "http://localhost:5173",
-                "http://localhost:3000"
-        ));
-        corsConfiguration.setAllowedHeaders(List.of("*"));
-        corsConfiguration.setAllowedMethods(List.of("*"));
-        corsConfiguration.setAllowCredentials(true);
-
-        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", corsConfiguration);
-
-        return new CorsWebFilter(source);
-    }
 
     @Bean
     IdentityClient identityClient(WebClient webClient){
