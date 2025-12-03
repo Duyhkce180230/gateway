@@ -28,7 +28,7 @@ spring:
 
       routes:
         - id: identity_service
-          uri: https://identity-service.onrender.com/identity
+          uri: https://identity-service-7tzp.onrender.com
           predicates:
             - Path=${app.api-prefix}/identity/**
           filters:
