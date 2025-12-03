@@ -28,12 +28,11 @@ spring:
 
       routes:
         - id: identity_service
-          uri: https://identity-service.onrender.com
+          uri: https://identity-service.onrender.com/identity
           predicates:
-            - Path=/api/v1/identity/**
+            - Path=${app.api-prefix}/identity/**
           filters:
             - StripPrefix=3
-
 
         - id: patient_service
           uri: https://patient-service.onrender.com
